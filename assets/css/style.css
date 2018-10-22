@@ -172,6 +172,10 @@ header div h2 {
     text-align: center;
 }
 
+.socialmediatitle h1 {
+    color: black;
+}
+
 .socialmedia {
     display: flex;
     flex-direction: row;
