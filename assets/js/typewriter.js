@@ -39,7 +39,7 @@ TxtType.prototype.tick = function() {
     }, delta);
 };
 
-window.onload = function typewriter() {
+(function typewriter() {
     var elements = document.getElementsByClassName('typewrite');
     for (var i=0; i<elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-type');
@@ -54,4 +54,4 @@ window.onload = function typewriter() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     css.innerHTML = ".typewrite > .wrap { text-align: center;}";
     document.body.appendChild(css);
-};
+})();

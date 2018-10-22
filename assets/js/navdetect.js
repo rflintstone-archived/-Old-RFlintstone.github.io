@@ -23,11 +23,13 @@
 //     autohome();
 // }
 
-window.onload = function scrollspynav() {
+(function scrollspynav() {
     
     new SmoothScroll('a[href*="#"]');
 
     const section = document.getElementsByClassName("scrollspy");
+    const home = document.getElementById("home");
+
     const sections = {};
     let i = 0;
     let c = true;
@@ -48,7 +50,7 @@ window.onload = function scrollspynav() {
                 document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active', 'navinbody');
                 c = false;
 
-                $("#home").css("background", "rgba(0,0,0,.4)");
+                home.style.backgroundColor = "rgba(0,0,0,.4)";
             }
         }
         if (c) {
@@ -58,12 +60,7 @@ window.onload = function scrollspynav() {
             }
             document.querySelector('a[href*=home]').setAttribute('class', 'active', 'navatheader');
 
-            $("#home").css("background-color", "#03090b");
+            home.style.backgroundColor = "#03090b";
         }
     }
-    autohome();
-};
-
-
-
-
+})();
