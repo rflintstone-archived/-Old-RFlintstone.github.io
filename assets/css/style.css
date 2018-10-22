@@ -172,7 +172,7 @@ header div h2 {
     text-align: center;
 }
 
-.socialmediatitle h1 {
+.socialmediatitle h1 { /*Black color added in patch (1.1.1)*/
     color: black;
 }
 
