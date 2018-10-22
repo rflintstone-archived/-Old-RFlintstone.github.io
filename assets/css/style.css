@@ -249,6 +249,7 @@ header div h2 {
     text-align: center;
     font-weight: bold;
     font-size: 2em;
+    color: black;
 }
 
 .aboutimg {
@@ -468,7 +469,7 @@ header div h2 {
 
 /* Begin Social*/
 .socialbody {
-    height: 235px;
+    height: 239px;
     width: 100%;
     margin: 0px;
     background: #fff;
