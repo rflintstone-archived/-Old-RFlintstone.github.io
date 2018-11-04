@@ -18,10 +18,10 @@ TxtType.prototype.tick = function() {
         this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
 
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>'; // This detects what the script needs to replace/remove
 
     var that = this;
-    var delta = 200 - Math.random() * 100;
+    var delta = 200 - Math.random() * 100; // If I'm right, this is amount of time it takes to fully replace the text within the header
 
     if (this.isDeleting) { delta /= 2; }
 

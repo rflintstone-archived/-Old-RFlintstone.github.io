@@ -1,3 +1,7 @@
+
+
+// Long script that will move / scroll the page to a certain ID. Speed and movement is specified in this script -Ruben
+
 (function (root, factory) {
 	if (typeof define === 'function' && define.amd) {
 		define([], function () {
