@@ -23,11 +23,13 @@
 //     autohome();
 // }
 
-(function scrollspynav() {
-    
-    new SmoothScroll('a[href*="#"]');
+// My JS knowledge is limited but I know the basics of it. -Ruben
 
-    const section = document.getElementsByClassName("scrollspy");
+(function scrollspynav() {
+
+    new SmoothScroll('a[href*="#"]'); // <-- Will look for an idea with this prefix within CSS to eventually execute functions below
+
+    const section = document.getElementsByClassName("scrollspy"); // Needs class scrollspy to execute this script
     const home = document.getElementById("home");
 
     const sections = {};
@@ -43,11 +45,11 @@
         c = true;
         for (i in sections) {
             if (sections[i] <= scrollPosition + 80) {
-                const active = document.getElementsByClassName('active')[0];
+                const active = document.getElementsByClassName('active')[0]; // Wants to look for and eventually add class active (specified in style.css) so it can add the color and italic text)
                 if (active) {
-                    active.classList.remove('active');
+                    active.classList.remove('active'); //removes class active when needed
                 }
-                document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active', 'navinbody');
+                document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active', 'navinbody'); //adds classes when needed
                 c = false;
 
                 home.style.backgroundColor = "rgba(0,0,0,.4)";
@@ -58,7 +60,7 @@
             if (active) {
                 active.classList.remove('active');
             }
-            document.querySelector('a[href*=home]').setAttribute('class', 'active', 'navatheader');
+            document.querySelector('a[href*=home]').setAttribute('class', 'active', 'navatheader'); //Will add classes when needed
 
             home.style.backgroundColor = "#03090b";
         }
